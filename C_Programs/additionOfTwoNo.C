@@ -10,6 +10,10 @@ Written For - http://developerinsider.in
 void main()
 {
 	clrscr();
-	printf("Hello world\n");
+	int num1,num2,result;
+	printf("Enter two number for addition=\n");
+	scanf("%d%d",&num1,&num2);
+	result=num1+num2;
+	printf("The addition of these two numbers is %d",result);
 	getch();
 }
