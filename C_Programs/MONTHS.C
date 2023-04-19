@@ -1,0 +1,73 @@
+//1 to 12 and Print the month
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int monthNo;
+	printf("Enter any number between 1 to 12 =");
+	scanf("%d",&monthNo);
+	if(monthNo==1)
+	{
+	printf("\nJanuary");
+	}
+	else
+	{
+	if(monthNo==2)
+	{
+	printf("\nFebruary");
+	}
+	else
+	if(monthNo==3)
+	{
+	printf("\nMarch");
+	}
+	else
+	if(monthNo==4)
+	{
+	printf("\nApril");
+	}
+	else
+	if(monthNo==5)
+	{
+	printf("\nMay");
+	}
+	else
+	if(monthNo==6)
+	{
+	printf("\nJune");
+	}
+	else
+	if(monthNo==7)
+	{
+	printf("\nJuly");
+	}
+	else
+	if(monthNo==8)
+	{
+	printf("\nAugust");
+	}
+	else
+	if(monthNo==9)
+	{
+	printf("\nSeptember");
+	}
+	else
+	if(monthNo==10)
+	{
+	printf("\nOctober");
+	}
+	else
+	if(monthNo==11)
+	{
+	printf("\nNovember");
+	}
+	else
+	if(monthNo==12)
+	{
+	printf("\nDecember");
+	}
+	}
+	getch();
+}
+
