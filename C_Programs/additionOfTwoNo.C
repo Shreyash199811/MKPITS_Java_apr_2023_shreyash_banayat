@@ -11,7 +11,7 @@ void main()
 {
 	clrscr();
 	int num1,num2,result;
-	printf("Enter two number for addition=\n");
+	printf("Enter two number for addition is=\n");
 	scanf("%d%d",&num1,&num2);
 	result=num1+num2;
 	printf("The addition of these two numbers is %d",result);
