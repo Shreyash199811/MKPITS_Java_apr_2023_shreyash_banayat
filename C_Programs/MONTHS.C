@@ -9,63 +9,63 @@ void main()
 	scanf("%d",&monthNo);
 	if(monthNo==1)
 	{
-	printf("\njanuary");
+	printf("\nJanuary");
 	}
 	else
 	{
 	if(monthNo==2)
 	{
-	printf("\nfebruary");
+	printf("\nFebruary");
 	}
 	else
 	if(monthNo==3)
 	{
-	printf("\nmarch");
+	printf("\nMarch");
 	}
 	else
 	if(monthNo==4)
 	{
-	printf("\napril");
+	printf("\nApril");
 	}
 	else
 	if(monthNo==5)
 	{
-	printf("\nmay");
+	printf("\nMay");
 	}
 	else
 	if(monthNo==6)
 	{
-	printf("\njune");
+	printf("\nJune");
 	}
 	else
 	if(monthNo==7)
 	{
-	printf("\njuly");
+	printf("\nJuly");
 	}
 	else
 	if(monthNo==8)
 	{
-	printf("\naugust");
+	printf("\nAugust");
 	}
 	else
 	if(monthNo==9)
 	{
-	printf("\nseptember");
+	printf("\nSeptember");
 	}
 	else
 	if(monthNo==10)
 	{
-	printf("\noctober");
+	printf("\nOctober");
 	}
 	else
 	if(monthNo==11)
 	{
-	printf("\nnovember");
+	printf("\nNovember");
 	}
 	else
 	if(monthNo==12)
 	{
-	printf("\ndecember");
+	printf("\nDecember");
 	}
 	}
 	getch();

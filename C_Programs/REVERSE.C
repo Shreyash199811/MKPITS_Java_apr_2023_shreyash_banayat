@@ -1,9 +1,9 @@
 //Reverse
 #include<stdio.h>
 #include<conio.h>
-void main()
+int main()
 {
-	clrscr();
+//	clrscr();
 	int num,rem,reverse;
 	printf("Enter the 5  number=");
 	scanf("%d",&num);
@@ -34,8 +34,14 @@ void main()
 
 	rem=num%10;
 	printf("\nreverse5=%d",reverse);
-	reverse=(reverse*10)+rem;
 
 	printf("\nReverse is =%d",reverse);
+	
+		if(num==reverse){
+		printf("\nNumber is Palindrome");
+	}else
+	{
+		printf("\nNumber is not Palindrome");
+	}
 	getch();
 }

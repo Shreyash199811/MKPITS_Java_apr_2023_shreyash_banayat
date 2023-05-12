@@ -1,13 +1,14 @@
-// triangle-25-2
+//Matrix 24 10
 #include<stdio.h>
 #include<conio.h>
 void main()
 {
-	char r,c;
 	clrscr();
-	for(r='A';r<='D';r++)
+	int r;
+	char c;
+	for(r=1;r<=5;r++)
 	{
-		for(c='A';c<=r;c++)
+		for(c='E';c>='A';c--)
 		{
 		printf("%c",c);
 		}

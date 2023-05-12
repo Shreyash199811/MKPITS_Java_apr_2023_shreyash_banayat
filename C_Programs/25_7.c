@@ -1,17 +1,18 @@
-// triangle-25-2
+//25 7
 #include<stdio.h>
 #include<conio.h>
 void main()
 {
-	char r,c;
 	clrscr();
-	for(r='A';r<='D';r++)
+	char r;
+	int c;
+	for(r='E';r>='A';r--)
 	{
 		for(c='A';c<=r;c++)
 		{
-		printf("%c",c);
+			printf("%c",r);
 		}
-	printf("\n");
+		printf("\n");
 	}
 	getch();
 }

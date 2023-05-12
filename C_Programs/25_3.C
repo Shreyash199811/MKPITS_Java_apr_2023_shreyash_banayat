@@ -1,15 +1,15 @@
-// triangle-25-2
+//pyramid star * 25 3
 #include<stdio.h>
 #include<conio.h>
 void main()
 {
-	char r,c;
 	clrscr();
-	for(r='A';r<='D';r++)
+	int r,c;
+	for(r=1;r<=5;r++)
 	{
-		for(c='A';c<=r;c++)
+		for(c=1;c<=6-r;c++)
 		{
-		printf("%c",c);
+		printf("*");
 		}
 	printf("\n");
 	}
