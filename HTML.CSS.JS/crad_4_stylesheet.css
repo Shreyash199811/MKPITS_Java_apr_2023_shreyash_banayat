@@ -1,0 +1,9 @@
+
+.img-fluid{
+	height: 350px;
+	width: 350px;
+	border-radius: 50%;
+}
+.card{
+	outline: 6px solid black;
+}

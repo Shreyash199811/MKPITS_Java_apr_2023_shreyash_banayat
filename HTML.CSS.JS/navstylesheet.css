@@ -1,0 +1,65 @@
+.navbar{
+	background-color:#97a7c2 ;
+}
+
+.navbar-brand{
+	font-style:Arial Black ;
+}
+.carousel-inner{
+	weight:1200px;
+	height:800px;
+}
+
+.grid text-center .g-col-3 g-start-2{
+	weight=500px;
+	height=500px;
+}
+
+.grid text-center.g-col-4 g-start-6{
+	weight=500px;
+	height: 500px;
+}
+
+.fontClass{
+	font-family: consolas;
+	font-size: 20px;
+	background-color:#c8fa52 ;
+}
+#a2f5ce
+.col{
+	height: 600px;
+	weight: 600px;
+}
+
+.col1{
+	height: 100px;
+	weight: 1500px;
+}
+
+.container .row .col img:hover{
+		transform: scale(1.1);
+}
+img{
+	border: 2px solid black;
+}
+
+.col1 .changeColor{
+	font-size: 30px;
+	font-family: Arial Black;
+	font-color:#fc0330;
+}
+
+.p1{
+	font-family: Arial Black;
+	font-color:#32a852;
+	font-size: 20px;
+}
+
+
+<p>We are King's Real Estates with us you can bring your dream housse to reality.
+  		We just do not make buildings we make houses you. And you and not customers to 
+  		us you are a dreamer and we are the visionaries both we can make your dream of
+  		come owing a house will come true.We have many dreamers whose dreams are fullfiled
+  		and are fuilfiling from all around the globe so come with us, share your dream and
+  		let's start building it.
+    </p>
