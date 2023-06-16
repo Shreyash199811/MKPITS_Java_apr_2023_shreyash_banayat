@@ -8,6 +8,7 @@ class Movies{
 class Documentary extends Movies{
 	String subject;
 	List<DocumentedPeople> people;
+	String purpose;
 }
 
 class Animated extends Movies{
