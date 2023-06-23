@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="classlet"></h3>
+    <h3 id="line"></h3>
+    <h3 id="add"></h3>
+    <!-- <h3 id="sub"></h3>
+    <h3 id="multi"></h3> -->
+
+    <button onclick="add()">Click for add</button><br>
+    <button onclick="subtraction()">Click for Subtraction</button>  <br> 
+    <button onclick="multiplication()">Click for Multiplication</button> <br>
+    <button onclick="division()">Click for Division</button> <br>
+    <button onclick="firstName()">Click for first name</button> <br>
+    <button onclick="lastName()">Click for last name</button> <br>
+    <button onclick="fullName()">Click for full name</button> <br>
+
+
+
+
+</body>
+
+    <script>
+        let dept="CSE";
+            hod="abc";
+         professor="abc";
+        // document.getElementById("classlet").innerHTML=dept+" "+hod+" "+professor;
+        // document.getElementById("line").innerHTML="<b>"+dept+"</b> department <b>"+hod+"</b> is <b><i>"+professor+"</b></i>";
+
+        let x=10;
+        let  y=20;
+
+        function add(){
+            let z=x+y;
+            document.getElementById("add").innerHTML=z;
+        }
+
+        function subtraction(){
+            let z=x-y;
+            document.getElementById("add").innerHTML=z;
+        }
+
+        function multiplication(){
+            let z=x*y;
+            document.getElementById("add").innerHTML=z;
+        }
+
+        function division(){
+            let z=x/y;
+            document.getElementById("add").innerHTML=z;
+        }
+         
+        
+        function firstName(){
+            let z="Shreyash";
+            document.getElementById("add").innerHTML=z;
+        }
+
+        function lastName(){
+            let z="Banayat";
+            document.getElementById("add").innerHTML=z;
+        }
+
+        function fullName(){
+            let z="Shreyash Banayat";
+            document.getElementById("add").innerHTML=z;
+        }
+        
+
+
+
+
+
+
+    </script>
+</html>

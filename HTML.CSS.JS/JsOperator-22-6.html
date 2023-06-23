@@ -1,0 +1,41 @@
+<!-- Arithematic Operators -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <h4 id="ari"></h4><br>
+    <h4 id="assign"></h4>
+    <button onclick=assign()>Click for Assingment</button><br>
+    <h4 id="comp"></h4>
+    <button onmouseover=typeComparison()>Click for Comparison</button><br>
+</body>
+    <script>
+    
+        let  result=(2**2);
+        document.getElementById("ari").innerHTML=result;
+
+        // Assingment operator
+
+        let number=10;
+        function assign(){
+            result += number;       //result is already 4 because of above code
+            document.getElementById("assign").innerHTML=result;
+        }
+
+        //Comparison Operators
+
+        let value=true;
+        function typeComparison(){
+            result===number;
+            document.getElementByID("comp").innerHTML=value;
+        }
+
+
+
+
+    </script>
+</html>
