@@ -1,6 +1,6 @@
 class SwitchDefaultChange{					//float and Double cannot be used for case 
-	
-	public static void main(String[] args){
+								//to use float and double you have to type-cast
+	public static void main(String[] args){			
 		float anyFloatValue=3.0;
 		System.out.println("3==>case1"+
 		"3.0==>case2"+
