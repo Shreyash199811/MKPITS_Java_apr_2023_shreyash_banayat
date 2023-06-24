@@ -1,4 +1,4 @@
-class SwitchDefaultChange{
+class SwitchDefaultChange{					//float and Double cannot be used for case 
 	
 	public static void main(String[] args){
 		float anyFloatValue=3.0;
@@ -14,7 +14,9 @@ class SwitchDefaultChange{
 		
 		case 3:System.out.println("3.0");
 		break;
-		
+
+		default:System.out.println("3");
+		break;
 		
 		case 3.0f:System.out.println("case 2 is invocated");
 		break;
@@ -30,10 +32,6 @@ class SwitchDefaultChange{
 		
 		case 3.00000f:System.out.println("3.00000");
 		break;
-		
-		default:System.out.println("3");
-		break;
-		
 	}
 	}
 }
