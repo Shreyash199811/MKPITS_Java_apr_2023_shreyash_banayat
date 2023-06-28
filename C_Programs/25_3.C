@@ -1,9 +1,9 @@
 //pyramid star * 25 3
 #include<stdio.h>
 #include<conio.h>
-void main()
+int main()
 {
-	clrscr();
+//	clrscr();
 	int r,c;
 	for(r=1;r<=5;r++)
 	{

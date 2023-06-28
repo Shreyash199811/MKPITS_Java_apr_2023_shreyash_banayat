@@ -1,9 +1,9 @@
 //26 1
 #include<stdio.h>
 #include<conio.h>
-void main()
+int main()
 {
-clrscr();
+//clrscr();
 int r,sp,str;
 for(r=1;r<=3;r++)
 {
