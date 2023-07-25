@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Document</title>
+</head>
+<body>
+    <p id="len"></p>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+
+    
+</body>
+<script>
+    // let fruit="banana";
+   
+    // document.getElementById("len").innerHTML=fruit.slice(0,1);
+
+    let fruits="banana,Orange,Mango,Grapes,Apple";
+    let stringLength=fruits.length;
+        document.getElementById("p1").innerHTML="The String Lengthh is <b>"+fruits.length+"</b>";   
+     onlyThreeFruits=fruits.slice(0,19);
+    document.getElementById("p2").innerHTML=onlyThreeFruits;
+
+    onlyThreeFruits=fruits.slice(14,32);
+    document.getElementById("p3").innerHTML=onlyThreeFruits;
+
+
+</script>
+</html>

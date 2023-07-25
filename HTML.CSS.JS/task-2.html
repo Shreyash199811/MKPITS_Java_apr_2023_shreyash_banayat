@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  <!-- BootStrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<!--  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/8b2e4c508a.js" crossorigin="anonymous"></script>
+	<!--  -->
+
+  <link rel="stylesheet" href="task-2-style.css">
+
+</head>
+<body>
+  
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-2" href="#"><span onclick="openNav()"><i class="fa-solid fa-leaf"></i> Nisarg Nursery</a>
+
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 fw-bolder">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Services</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonial</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About Us </a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="bgimage">
+        <img src="image/budding.jpg">
+      </div>
+
+
+      <div class="navbar ms-auto fs-3 fw-bolder" style="justify-content: center;">
+        About Us
+      </div>
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="container text-center">
+              <div class="row row-2">
+                <div class="upperdiv"><img src="image/carsousel-2.jpg" height="300px" width="300px"></div>
+                <div class="lowerdiv"><img src="image/plant-2.jpg" height="300px" width="300px"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <p class="fs-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime sapiente placeat dicta voluptatibus, nobis nulla maiores,
+               labore exercitationem consectetur perspiciatis animi officia enim corporis odit modi consequuntur doloremque asperiores.
+               Aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos repellendus, fugiat pariatur harum ipsa dolorem sequi omnis quo.
+                Aperiam ducimus, dolorem dolorum quo et accusantium provident expedita voluptates aut?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, deserunt. Maxime voluptatem similique ullam tempore necessitatibus.
+               Perspiciatis unde harum, exercitationem quaerat, aut quasi modi, praesentium quas ad consectetur explicabo possimus.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit labore eveniet aperiam officia similique quasi eius,
+               laudantium alias ipsam at aliquid explicabo impedit quia dolorem eaque pariatur nihil repellendus! Tenetur.</p>
+          </div>
+        </div>
+      </div>
+     
+
+      <div class="navbar ms-auto fs-3 fw-bolder" style="justify-content: center;">
+        Services
+      </div>
+      
+      <div class="div1">
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="image/home-delivery-1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="image/variety-2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="image/plants-exhibition.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="navbar ms-auto fs-3 fw-bolder" style="justify-content: center;">
+      Testimonial
+    </div>
+
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="image/person-4.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="image/person-3.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="image/person-5.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="image/img_p1.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+</body>
+</html>

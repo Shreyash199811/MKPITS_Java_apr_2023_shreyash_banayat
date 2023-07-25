@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb-0n-0ff</title>
+    <!-- BootStrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<!--  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	<!--CSS link  -->
+    <link rel="stylesheet" href="bulv-style.css">
+
+</head>
+<body>
+    <div id="div1" class="lightoff">
+        <img src="image/bulb-off-removebg-preview.png">
+        <button onclick="change()" class="btn1">On</button>
+    </div>
+
+    <div id="div2" class="lighton">
+        <img src="image/bulb-on-removebg-preview.png">
+        <button onclick="change()" class="btn2">Off</button>
+    </div>
+
+    <script>
+        function change(){
+            if(document.getElementById('div1').style.display=='none'){
+                (document.getElementById('div1').style.display='block');
+                (document.getElementById('div2').style.display='none');
+            }
+            else{
+                (document.getElementById('div2').style.display='block');
+                (document.getElementById('div1').style.display='none');
+            }
+        }
+    </script>
+</body>
+</html>

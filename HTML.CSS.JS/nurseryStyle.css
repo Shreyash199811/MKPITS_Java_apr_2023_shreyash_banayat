@@ -1,0 +1,52 @@
+.seprator{
+    height:50px;
+    width: 100%;
+    background: rgb(6,144,154);
+background: linear-gradient(90deg, rgba(6,144,154,0.7848389355742297) 35%, rgba(5,117,16,0.9529061624649859) 100%);
+}
+
+.navstyle{
+background: rgb(6,144,154);
+background: linear-gradient(90deg, rgba(6,144,154,0.7848389355742297) 35%, rgba(5,117,16,0.9529061624649859) 100%);
+}
+
+.cards{
+    display: flex;
+}
+
+.card{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.shapes{
+    display:flex;
+    height: 400px;
+    width:100%;
+}
+
+.shape{
+    height: 300px;
+    width: 300px;
+}
+
+.shape1{
+    background-image: url(image/graph-6.png);
+    background-repeat: no-repeat;
+}
+
+.shape2{
+    background-image: url(image/graph-4.png);
+    background-repeat: no-repeat;
+}
+
+.shape3{
+    background-image: url(image/graph-8.png);
+    background-repeat: no-repeat;
+}
+
+
+/* .carousel .carousel-inner .carousel-item img{
+    width: 1200px;
+    height: 500px;
+} */

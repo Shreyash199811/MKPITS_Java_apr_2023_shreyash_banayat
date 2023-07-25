@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div>
+    <label for="txt1" >Enter First Value</label>
+    <input type="number"  id="txt1" value=" " placeholder="First Value"><br><br>
+    <label for="txt2" >Enter Second Value</label>
+    <input type="number"  id="txt2" value=" " placeholder="Second Value"><br><br>
+    <!-- buttons -->
+    <button onclick="addition()" id="add-btn">Add</button>
+    <button onclick="substract()" id="subtract-btn">Substract</button>
+    <button onclick="multiply()" id="multiply-btn">Multiply</button>
+    <button onclick="divide()" id="division-btn">Divide</button>
+    <button onclick="modulus()" id="modulus-btn">Modulus</button><br><br>
+    </div>
+    <!-- result -->
+    <div>
+    <input type="number" id="txt3" placeholder="Result">
+    </div>
+
+
+    <script>
+        let a=getElementByID("txt1").value;
+        let b=getElementByID("txt2").value;
+
+        function addition(){
+         c=a+b;
+        document.getElementById("txt3").innerHTML=c;
+        }
+
+        function substract(){
+         c=a-b;
+        document.getElementById("txt3").innerHTML=c;
+        }
+
+        function multiply(){
+         c=a*b;
+        document.getElementById("txt3").innerHTML=c;
+        }
+
+        function divide(){
+         c=a/b;
+        document.getElementById("txt3").innerHTML=c;
+        }
+
+        function modulus(){
+         c=a%b;
+        document.getElementById("txt3").innerHTML=c;
+        }
+    </script>
+</body>
+</html>
