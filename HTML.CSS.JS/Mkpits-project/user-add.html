@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--font awesome  -->
+    <script src="https://kit.fontawesome.com/8b2e4c508a.js" crossorigin="anonymous"></script>
+    <!--  -->
+    <link rel="stylesheet" href="css/admin-style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <div class=" container header">
+        <img src="images/MKPITS_Logo.png" height="50px" width="50px" style="margin-top: 10px;">
+        <h3 class="para ms-auto fs-2 fw-bolder">New User</h3>
+    </div>
+
+    <nav class="navbar text-center">
+        <div class="container-fluid">
+            <button><span onclick="openNav()"><i class="fa-solid fa-bars"></i></span></button>
+            <button class="ms-auto"><a href=admin.html><i class="fa-solid fa-right-from-bracket"></i></a></button>
+        </div>
+        </nav>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="admin.html">Dashboard </a>
+            <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Users</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="user-add.html">New User</a></li>
+                <li><a class="dropdown-item" href="#">View Users</a></li>
+              </ul>
+            <a  href="#">Leads</a>
+            <a href="#">Admissions</a>
+            <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Statistics</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Java</a></li>
+                <li><a class="dropdown-item" href="#">Dot Net</a></li>
+                <li><a class="dropdown-item" href="#">Python</a></li>
+              </ul>
+        </div>
+
+
+    <!-- <div class="card1"> -->
+    <div class="row"> 
+        <div class="col-md-4 offset-md-4">
+           <div class="card card-bg">
+            <div class="card-body px-5">
+                <h3 class="text-center my-3">Add User</h3>
+                <form>
+                    <label for="uname" class="form-label">Enter Full Name</label>
+                    <input type="text" class="form-control" id="uname" placeholder="enter as first name-middle name-last name" aria-describedby="emailHelp">                  
+                </form><br>
+
+                <form>
+                    <label for="mail" class="form-label">Enter Email ID</label>
+                    <input type="email" class="form-control" id="mail" placeholder="enter here" aria-describedby="emailHelp">                  
+                </form><br>
+               
+                <form>
+                    <label for="phone" class="form-label">Enter Mobile Number</label>
+                    <input type="number" class="form-control" id="phone" placeholder="enter here" aria-describedby="emailHelp">                  
+                </form><br>
+
+                <form>
+                    <label for="course">Course</label><br>
+                    <select id="course">
+                        <option value="dropdown"> Center </option>
+                        <option >IELTS</option>
+                        <option >PTE</option>
+                    </select>
+                </form>
+
+                <div style="margin-top: 20px;">
+                  <button type="submit" class="addbtn">Add User</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div> 
+<!-- </div> -->
+
+
+<script src="sidenav.js"></script>
+
+</body>
+</html>

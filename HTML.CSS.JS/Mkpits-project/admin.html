@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+	  <script src="https://kit.fontawesome.com/8b2e4c508a.js" crossorigin="anonymous"></script>
+    <!--  -->
+    <link rel="stylesheet" href="css/admin-style.css">
+    
+</head>
+<body>
+      
+    <div class=" container header">
+                <img src="images/MKPITS_Logo.png" height="50px" width="50px" style="margin-top: 10px;">
+                <h3 class="para ms-auto fs-2 fw-bolder">Admin</h3>
+    </div>
+
+    <nav class="navbar text-center">
+        <div class="container-fluid">
+            <button><span onclick="openNav()"><i class="fa-solid fa-bars"></i></span></button>
+            <button><a href=login.html><i class="fa-solid fa-right-from-bracket"></i></a></button>
+        </div>
+        </nav>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Dashboard </a>
+            <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Users</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="user-add.html">New User</a></li>
+                <li><a class="dropdown-item" href="#">View Users</a></li>
+              </ul>
+            <a  href="#">Leads</a>
+            <a href="#">Admissions</a>
+            <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Statistics</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Java</a></li>
+                <li><a class="dropdown-item" href="#">Dot Net</a></li>
+                <li><a class="dropdown-item" href="#">Python</a></li>
+              </ul>
+        </div>
+
+        <section id="main">
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <h2>Revenue Generated per week</h2>
+                <div id="piechart1" style="width: 600px; height: 400px;"></div>
+              </div>
+              <div class="col">
+                <h2>Student Admited</h2>
+                <div id="piechart2" style="width: 600px; height: 400px;"></div>
+              </div>
+            </div>
+          </div>
+
+
+      <!-- cards -->
+      <div class="gridcards">
+      <div class="container text-center" style="margin-left: 150px;">
+        <div class="row row-cols-2">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/lead.jpg" class="img-fluid rounded-start" alt="source not found" >
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">New Leads</h5>
+                    <p class="card-text fs-3 fw-bolder">25</p>
+                    <p class="card-text"><small class="text-body-secondary">View All</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="images/rupee.jpg" class="img-fluid rounded-start" alt="source not found">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Total Revenue This Month</h5>
+                      <p class="card-text fs-3 fw-bolder">Rs.14,130</p>
+                      <p class="card-text"><small class="text-body-secondary ms-auto">(WITHDRAW)</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="images/lead-3.jpg" class="img-fluid rounded-start" alt="source not found">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Open Leads</h5>
+                      <p class="card-text fs-3 fw-bolder">38</p>
+                      <p class="card-text"><small class="text-body-secondary">(STATEMENT)</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="images/lead-2.jpg" class="img-fluid rounded-start" alt="source not found">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Total Admissions This Month</h5>
+                      <p class="card-text fs-3 fw-bolder">20</p>
+                      <p class="card-text"><small class="text-body-secondary">(REPORT)</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- table -->
+      <div class="tablediv">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Course</th>
+            <th scope="col">Progress</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Shreyash</td>
+            <td>Java</td>
+            <td><div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 25%">25%</div>
+            </div></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Mrunali</td>
+            <td>Java</td>
+            <td><div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 25%">25%</div>
+            </div></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td >Pradnya</td>
+            <td>Java</td>
+            <td><div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 25%">25%</div>
+            </div></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td >Jaiyesh</td>
+            <td>DotNet</td>
+            <td><div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 80%">80%</div>
+            </div></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td >Sahil</td>
+            <td>DotNet</td>
+            <td><div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 80%">80%</div>
+            </div></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td >Ashish</td>
+            <td>DotNet</td>
+            <td><div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 80%">80%</div>
+            </div></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </section>    
+            
+            
+            
+            
+         
+
+     <script src="sidenav.js">
+        </script>
+
+        <!-- graph1 -->
+         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Java',     11],
+          ['Python',      2],
+          ['Dot Net',    7]
+        ]);
+
+        var options = {
+          title: 'Monthly Revenue Generated'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <!-- Graph2 -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Java', 10],
+          ['Python', 7],
+          ['Dot Net',    14]
+        ]);
+
+        var options = {
+          title: 'Monthly Admissions'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    
+</body>
+</html>
+
+<!-- <span onclick="openNav()"><i class="fa-solid fa-list-ul"></i></span> -->

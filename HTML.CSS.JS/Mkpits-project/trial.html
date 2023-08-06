@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trial</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- -->
+
+    <style>
+        .list li{
+          display: inline-block ;
+          cursor: pointer;
+          padding: 50px;
+        }
+
+        .list li:hover{
+          color:rgb(12,50,131);
+        }
+
+      
+        .nav{
+          width: 100%;
+          height: 120px;
+        }
+        #l1{
+          display: block;
+        }
+        #l2{
+          display:none;
+        }
+        #l3{
+          display:none;
+        }
+        #l4{
+          display:none;
+        }
+        #l5{
+          display:none;
+        }
+      #l6{
+          display:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav" id="navlist">
+        <ul class="list fw-bolder fs-5">
+          <li><button>Python</button></li>
+          <li><button>Advance Python</button></li>
+          <li>Django Web Framework</li>
+          <li><a href="#l4">Flask Web Framework</a></li>
+          <li><a href="#l5">Git</a></li>
+          <li><a href="#l6">UML</a></li>
+        </ul>
+    </div>
+
+    <div id="l1">
+        <ul>
+        <li>All about Python</li>
+        <li>Python Installation and Environment Setup</li>
+        <li>Writing first program in python</li>
+        <li>Syntax of python</li>
+        <li>Data type and Data Structures</li>
+        <li>Advance Containers from collection module</li>
+        <li>Control Statements</li>
+        <li>Looping in Python</li>
+        <li>Functions in Python</li>
+        <li>Advance Functions in Python</li>
+        <li>Closures and Decorators in Python</li>
+        <li>OOPs and Advance OOPs</li>
+        <li>Implementation of Data Structures in Python</li>
+        <li>Generators & Iterators in Python</li>
+        <li>Exception Handling</li>
+        <li>File Handling</li>
+        <li>Data Serialization</li>
+        <li>Installing Third Party Modules in Python</li>
+        <li>Database Connectivity</li>
+      </ul>
+      </div>
+
+      <div id="l2">
+        <ul>
+          <li>Debugging and Standard Coding in Python</li>
+          <li>Modules and Packages in Python</li>
+          <li>Standard Library in Python</li>
+          <li>Concurrent Execution in Python</li>
+          <li>Socket Programming</li>
+          <li>Mailing in Python</li>
+          <li>Graphical User Interface using Tk</li>
+          <li>Virtual Environment</li>
+          <li>Text Processing</li>
+          <li>Web Scraping</li>
+        </ul>
+      </div>
+
+      <div id="l3">
+        <ul>
+          <li>Installing and setting up a Django virtual environment</li>
+          <li>Creating a Django Project</li>
+          <li>Django Components</li>
+          <li>MVC architecture (Model, View, Controller)</li>
+          <li>Creating Django Views</li>
+          <li>Designing Django Templates using Jinja2 templating, html, css, js and static files</li>
+          <li>Configuring URL conf’s</li>
+          <li>Django Forms</li>
+          <li>Django and REST APIs</li>
+          <li>Data Base Models</li>
+          <li>User Logins and Django Admin Panel</li>
+          <li>Controls with Sessions and Users</li>
+          <li>Generic Class Based views in Django</li>
+          <li>Email Functionality for Django</li>
+          <li>OTP verification in Django</li>
+          <li>Deploying Django Application on Cloud & Linux servers</li>
+        </ul>
+      </div>
+
+      <div id="l4">
+        <ul>
+          <li>Flask Web Framework of Python</li>
+          <li>Installation and Configuration of Flask</li>
+          <li>Hello World to web using Flask</li>
+          <li>Templates</li>
+          <li>Jinja2 Template Rendering (Include and Extending)</li>
+          <li>xHandling GET and POST requests in Flask</li>
+          <li>Integrating HTML, CSS, Flask together</li>
+          <li>Web Forms</li>
+          <li>Cookies and Sessions in Flask</li>
+          <li>Database</li>
+          <li>User Logins</li>
+          <li>Profile Page</li>
+          <li>Ajax in Flask</li>
+          <li>Testing and Debugging</li>
+          <li>Deployment on Linux</li>
+        </ul>
+      </div>
+
+      <div id="l5">
+        <ul>
+          <li>Understand the differences between Git, Github and Gitlab</li>
+          <li>Install and configure Git for use</li>
+          <li>Use Git to manage files using CLI commands</li>
+          <li>Create, Clone and manage repositories</li>
+          <li>Reviewing audit trails</li>
+          <li>Perform Branching, Merging and Rebasing</li>
+          <li>Prevent and resolve merge conflicts</li>
+          <li>Understand common Git workflows</li>
+          <li>Perform basic troubleshooting of Git</li>
+        </ul>
+      </div>
+
+      <div id="l6">
+        <ul>
+          <li>Object-Oriented Fundamentals</li>
+          <li>Getting Start with UML</li>
+          <li>Use Case Models</li>
+          <li>Class Diagrams</li>
+          <li>Sequence Diagrams</li>
+          <li>Design Patterns</li>
+          <li>Case Study</li>
+        </ul>
+      </div>
+
+      <script>
+        function display2(){
+        if (document.getElementById('l2').style.display=='none'){
+       (document.getElementById('l2').style.display='block');
+       (document.getElementById('l1').style.display='none');
+       (document.getElementById('l3').style.display='none');
+       (document.getElementById('l4').style.display='none');
+       (document.getElementById('l5').style.display='none');
+       (document.getElementById('l6').style.display='none');
+        }
+      }
+      </script>
+
+</body>
+</html>

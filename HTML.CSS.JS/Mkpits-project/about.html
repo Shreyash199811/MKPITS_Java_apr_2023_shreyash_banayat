@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--  -->
+    <link rel="stylesheet" href="css/nav-foot.css">
+    <link rel="stylesheet" href="css/about-style.css">
+
+    <style>
+        .banner1{
+            width: 100%;
+            height: 600px;
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/aboutbanner.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+          }
+
+        .banner2{
+            width: 100%;
+            height: 1200px;
+            border-top: 5px solid white;
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/about-img.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }  
+
+        .banner3{
+          width: 100%;
+            height: 600px;
+            border-top: 5px solid white;
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/innovation-img.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/MKP_img-removebg-preview.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 fw-bolder">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index-page.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admission.html">Admission and Career Counselling</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  IT Recruitment
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">For Colleges</a></li>
+                  <li><a class="dropdown-item" href="#">For Candidates</a></li>
+                  <li><a class="dropdown-item" href="#">For Company</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  IT Training
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="python.html">Python</a></li>
+                  <li><a class="dropdown-item" href="java.html">Java</a></li>
+                  <li><a class="dropdown-item" href="dotnet.html">.Net</a></li>
+                  <li><a class="dropdown-item" href="php.html">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li>
+                <button class="login-btn"><a href="login.html">Login</a> </button>
+              </li>
+            </ul>
+
+          </div>    
+        </div>
+      </nav>
+
+      <div class="banner1">
+        <h1 class="headline">About Academy</h1>
+        <h2>CREATE A CULTURE OF CLOUD INNOVATION</h2><br><br>
+        <p class="info">
+            MKP IT Services, Nagpur, is an established and professionally managed Technical Training and Manpower Solutions Company, run by professionals with around 10 years of experience, to serve prospective clients. MKP IT Services, Nagpur provides complete recruitment solutions, sourcing and supplying quality staff throughout PAN India. We have a strong data bank of prospective candidates of different caliber from whom we select hands for specific requirements. Our area of recruitment covers IT (Software and Hardware), Engineering, Manufacturing, Iron & Steel, Power plant, and Construction.
+        </p>
+      </div>
+
+      <!-- style="padding:200px;" -->
+
+      <div class="banner2">
+        <div class="row row-cols-1 row-cols-md-2 g-4" >
+          <div class="col">
+            <div class="card" style="height: 460px;">
+              <img src="images/php-img.png" class="card-img-top" alt="source not found"/>
+              <div class="card-body">
+                <h5 class="card-title">PHP FULLSTACK DEVELOPER</h5>
+                <p class="card-text">
+                  Fullstack PHP developer will learn end-to-end implementation of the PHP project 
+                  which includes git, UML, CI/CD pipeline, requirement gathering, and deployment 
+                  of PHP capstone project on the cloud.
+                </p>
+                <a href="php.html" class="btn btn-primary">See More</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height: 420px;">
+              <img src="images/java-img.jpg" class="card-img-top" alt="source not found"/>
+              <div class="card-body">
+                <h5 class="card-title">JAVA FULLSTACK DEVELOPER</h5>
+                <p class="card-text">
+                  Fullstack Java developer will learn end-to-end implementation of the java 
+                  project which includes git, UML, CI/CD pipeline, requirement gathering, and 
+                  deployment of java capstone project on cloud.
+                </p>
+                <a href="java.html" class="btn btn-primary">See More</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height: 480px;">
+              <img src="images/dot-net.jpg" class="card-img-top" alt="source not found"/>
+              <div class="card-body">
+                <h5 class="card-title">DOTNET FULLSTACK DEVELOPER</h5>
+                <p class="card-text">Fullstack Dotnet developer will learn end-to-end implementation 
+                  of the .NET project which includes git, UML, CI/CD pipeline, requirement gathering, 
+                  and deployment of .NET capstone project on cloud.
+                </p>
+                <a href="dotnet.html" class="btn btn-primary">See More</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height: 470px;">
+              <img src="images/python-img.jpg" class="card-img-top" alt="source not found"/>
+              <div class="card-body">
+                <h5 class="card-title">PYTHON FULLSTACK DEVELOPER</h5>
+                <p class="card-text">
+                  Fullstack Python with Django and Flask developer will learn end-to-end implementation of
+                   the Python project which includes git, UML, CI/CD pipeline, requirement gathering, and
+                    deployment of python capstone project on cloud.
+                </p>
+                <a href="python.html" class="btn btn-primary">See More</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner3">
+        <h2 style="top: 100px; ">Keep Pace <br> With Innovation</h2>
+        <p class="info" style="top:200px; margin-right: 850px;">
+          We offer Campus Placement Services to Engineering Colleges. 
+          We focus on industries for placements: Engineering, Construction & 
+          Infrastructure, Information Technology, Telecom, BPOs, Call Centers, 
+          Automobile Industry, Manufacturing Unit, etc.
+        </p>
+      </div>
+
+
+
+
+      <!-- Footer -->
+    <div class="bg">
+        <footer class="text-center text-lg-start">
+          <!-- Section: Social media -->
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+          </section>
+        
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    <img src="images/MKPITS_Logo.png" height="100px" width="100px">
+                  </h6>
+                </div>
+        
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Products
+                  </h6>
+                  <p>
+                    <a href="#!" class="fs-5" style="color: black;">Java Fullstack</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="fs-5" style="color: black;">Dot Net</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="fs-5" style="color: black;">Python</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="fs-5" style="color: black;">PHP</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Some Useful links
+                  </h6>
+                  <p>
+                    <a href="#!" class="fs-5" style="color: black;">For Counselling</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="fs-5" style="color: black;">Get In Touch</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="fs-5" style="color: black;">Enquiry</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                  <p><i class="fas fa-home me-3"></i> Flat No. 301, Swami Sanket Sankul, Above Canara Bank, Puranik Layout, Bharat Nagar, Amravati Road, Nagpur – 440010</p>
+                  <p class="fs-5">
+                    <i class="fas fa-envelope me-3"></i>
+                    support@mkpits.in, jobs@mkpits.in
+                  </p>
+                  <p class="fs-5"><i class="fas fa-phone me-3"></i> +91 98906 99620</p>
+                  <p class="fs-5"><i class="fas fa-print me-3"></i> +91 75882 26611</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+          <div class="bg">
+            
+          </div>
+        
+        </footer>
+        </div>
+    
+</body>
+</html>
