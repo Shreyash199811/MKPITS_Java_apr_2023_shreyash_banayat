@@ -10,25 +10,14 @@
 <jsp:setProperty name="bank1" property="userAddress" param="user_address"/>
 <jsp:setProperty name="bank1" property="userCity" param="user_city"/>
 <jsp:setProperty name="bank1" property="accountBalance" param="user_amount"/>
-<%@page session="true" %>
 <%
     BankService bankService=new BankService();
     if (bankService.insertData(bank1)!=0)
     {
-%>
-<%@page session="true" %>
-<%
-//            session
-        session.setAttribute("login_Session",bank1);
-        out.println("inserted");
-
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("homepage.jsp");
-        requestDispatcher.forward(request, response);
+    out.println("Inserted");
     }
-
     else{
-        out.println("not inserted");
+    out.println("Not inserted");
         }
 %>
-
 
