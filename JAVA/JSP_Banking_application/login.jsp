@@ -8,32 +8,43 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:useBean id="bank1" class="com.example.bankapplicationusebean.Bank" scope="application"/>
-<jsp:setProperty name="bank1" property="userID" param="user_id"/>
-<jsp:setProperty name="bank1" property="user_password" param="user_ps"/>
+<jsp:setProperty name="bank1" property="userID" param="userID"/>
+<jsp:setProperty name="bank1" property="user_password" param="pass"/>
+
+<html>
+<head></head>
+<body>
 <%
 
     BankService bankService=new BankService();
     ResultSet resultSet=bankService.logIn(bank1);
     //     session Tracking
     String userid=bank1.getUserID();
+    String userpass=bank1.getUser_password();
     session.setAttribute("sessionID",userid);
+    System.out.println(userid);
 
-    if(resultSet.next())
-    {
-        out.println("Welcome");
+    if(userid.equals("admin") && userpass.equals("admin")){
+        RequestDispatcher requestDispatcher1 = request.getRequestDispatcher("admin-view.jsp");
+        requestDispatcher1.forward(request, response);
+    }else {
+        if (resultSet.next()) {
+            out.println("Welcome");
 
 //    Request Dispatcher
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("homepage.jsp");
-        requestDispatcher.forward(request, response);
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("homepage.jsp");
+            requestDispatcher.forward(request, response);
 
+        } else {
+
+
+            out.println("Unable to fetch");
+            out.println("<h2> <a href=index.jsp>Back to login page</a></h2>");
+        }
     }
-    else
-    {
-        out.println("Unable to fetch");
-
-    }
-
 %>
+</body>
+</html>
 
 
 

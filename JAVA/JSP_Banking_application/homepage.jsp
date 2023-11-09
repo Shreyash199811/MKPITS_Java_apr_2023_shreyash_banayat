@@ -34,9 +34,9 @@
 <body>
     <ul>
         <li><a href="deposit.jsp">Deposit</a></li>
-        <li>Withdraw</li>
-        <li>Transfer</li>
-        <li>Statement</li>
+        <li><a href="withdraw-view.jsp">Withdraw</a></li>
+        <li><a href="TransferFront.jsp">Transfer</a></li>
+        <li><a href="statement-view.jsp">Statement</a></li>
         <li>logout</li>
     </ul>
 
