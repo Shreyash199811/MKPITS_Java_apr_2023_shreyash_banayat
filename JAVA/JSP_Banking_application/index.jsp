@@ -11,6 +11,7 @@
   Enter password <input type="password" name="pass" placeholder="----Enter----"><br><br>
   <input type="submit" value="Submit">
 </form>
-<h2 align="center"><a href="registration-form.jsp">Sign Up</a></h2>
+<h2 align="center" ><a href="registration-form.jsp">Sign Up</a></h2><br>
+<h2 align="center"><a href="admin-view.jsp">Admin</a></h2><br>
 </body>
 </html>

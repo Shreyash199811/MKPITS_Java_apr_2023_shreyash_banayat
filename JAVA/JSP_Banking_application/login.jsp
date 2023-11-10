@@ -24,10 +24,7 @@
     session.setAttribute("sessionID",userid);
     System.out.println(userid);
 
-    if(userid.equals("admin") && userpass.equals("admin")){
-        RequestDispatcher requestDispatcher1 = request.getRequestDispatcher("admin-view.jsp");
-        requestDispatcher1.forward(request, response);
-    }else {
+
         if (resultSet.next()) {
             out.println("Welcome");
 
@@ -41,7 +38,7 @@
             out.println("Unable to fetch");
             out.println("<h2> <a href=index.jsp>Back to login page</a></h2>");
         }
-    }
+
 %>
 </body>
 </html>

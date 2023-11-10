@@ -15,9 +15,11 @@
 <jsp:setProperty name="bank1" property="userID" value="<%=userid%>"/>
 
 <%
+    String transactionType="Withdraw";
     BankService bankService=new BankService();
     int result=bankService.withdraw(bank1);
     bankService.insertTransaction(bank1,"Withdraw");
+    bankService.log(transactionType,userid);
     out.println(result);
     if(result!=0){
         out.println("Withdraw Succesfull");

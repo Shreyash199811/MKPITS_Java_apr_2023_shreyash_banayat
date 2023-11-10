@@ -23,9 +23,10 @@
 
 
 <%
-
+    String transactionType="Transfer";
     BankService transfer_amount=new BankService();
     transfer_amount.transferAmount(transfer);
+    transfer_amount.log(transactionType,id);
     out.println("<h3><a href=\"homepage.jsp\">Back</a></h3>");
 %>
 
